@@ -41,13 +41,13 @@ CREATE TABLE `kullanici` (
 --
 
 INSERT INTO `kullanici` (`kullaniciID`, `kullaniciAdi`, `kullaniciSoyadi`, `kullaniciMail`, `kullaniciParola`, `kullaniciYas`, `kullaniciKayitZamani`) VALUES
-(12, 'Mehmet Asaf', 'ÖZTÜRK', 'mehmetasafozturk@gmail.com', '123456789', 20, '2021-12-13 11:14:36'),
-(13, 'Mehmet Asaf', 'ÖZTÜRK', 'memet372@gmail.com', '987654321', 20, '2021-12-13 11:15:03'),
-(14, 'Egemen ', 'Kutay', 'egemenkutay@hotmail.com', 'qwertyu46', 10, '2021-12-13 11:16:10'),
-(15, 'Hakan ', 'Güneş ', 'hakangunes@mail.com', 'asdfg65', 33, '2021-12-13 11:16:33'),
-(16, 'Yunus Emre', 'Çelik', 'yemrecelik@gmail.com', 'sanane123', 25, '2021-12-13 11:17:09'),
-(17, 'Merve ', 'Hocaoğlu', 'mervehoglu@hotmail.com', '1111111', 65, '2021-12-13 11:17:54'),
-(18, 'Neslihan', 'Yavuz', 'nyavuz@gmail.com', 'portakal26', 28, '2021-12-13 11:21:21'),
+(12, 'Mehmet Asaf', 'ÖZTÜRK', '@gmail.com', '123456789', 20, '2021-12-13 11:14:36'),
+(13, 'Mehmet Asaf', 'ÖZTÜRK', '@gmail.com', '987654321', 20, '2021-12-13 11:15:03'),
+(14, 'Egemen ', 'Kutay', '@hotmail.com', 'qwertyu46', 10, '2021-12-13 11:16:10'),
+(15, 'Hakan ', 'Güneş ', '@mail.com', 'asdfg65', 33, '2021-12-13 11:16:33'),
+(16, 'Yunus Emre', 'Çelik', '@gmail.com', 'sanane123', 25, '2021-12-13 11:17:09'),
+(17, 'Merve ', 'Hocaoğlu', '@hotmail.com', '1111111', 65, '2021-12-13 11:17:54'),
+(18, 'Neslihan', 'Yavuz', '@gmail.com', 'portakal26', 28, '2021-12-13 11:21:21'),
 (20, 'a', 'a', 'a', 'a', 0, '2021-12-13 11:28:36'),
 (21, 'b', 'b', 'b', 'b', 0, '2021-12-13 11:28:41'),
 (22, 'c', 'c', 'c', 'c', 0, '2021-12-13 11:28:48'),
