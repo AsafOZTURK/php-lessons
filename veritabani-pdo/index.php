@@ -73,8 +73,52 @@
 			<td><?php echo $bilgilerimcek['kullaniciMail'] ?></td>
 			<td><?php echo $bilgilerimcek['kullaniciParola'] ?></td>
             <td><?php echo $bilgilerimcek['kullaniciYas'] ?></td>
-			<td align="center"><a href=""><button>Sil</button></a><a href=""><button>Düzenle</button></a></td>
+			<td align="center">
+                <a href="islem.php?kullaniciID=<?php echo $bilgilerimcek["kullaniciID"]?> & bilgilerimsil=ok"><button>Sil</button></a>
+                <a href="?kullaniciID=<?php echo $bilgilerimcek["kullaniciID"]?> & duzenle=ok"><button>Düzenle</button></a>
+            </td>
 		</tr>
 		<?php } ?> 
     </table>
+    <?php 
+	if ($_GET['silme']=="ok") {	
+		echo "<h4>Silme işlemi başarılı</h4>";
+	} elseif ($_GET['silme']=="no") {
+		echo "<h4>İşlem başarısız</h4>";
+	}
+	?>
+<br><br><br>
+
+    
+
+	<?php 
+	$bilgilerimsor=$db->prepare("SELECT * FROM kullanici WHERE kullaniciID=:id");
+	$bilgilerimsor->execute(array(
+		'id' => $_GET['kullaniciID']
+	));
+
+	$bilgilerimcek=$bilgilerimsor->fetch(PDO::FETCH_ASSOC);
+
+	?>
+    <h2>Veritabanı PDO Güncelleme İşlemleri</h2>
+    <hr>
+
+    <?php 
+	if ($_GET['durum']=="ok") {	
+		echo "<h4>Güncelleme işlemi başarılı</h4>";
+	} elseif ($_GET['durum']=="no") {
+		echo "<h4>İşlem başarısız</h4>";
+	}
+	?>
+
+    <form class="form" style="margin: 50px 0px 100px 0px;" action="islem.php" method="POST">
+        <input style="width:20px;" type="text" name="kullaniciID" value="<?php echo $bilgilerimcek['kullaniciID'] ?>" readonly>
+        <input type="text" name="kullaniciAdi" value="<?php echo $bilgilerimcek['kullaniciAdi'] ?>">
+        <input type="text" name="kullaniciSoyadi" value="<?php echo $bilgilerimcek['kullaniciSoyadi'] ?>">
+        <input type="text" name="kullaniciMail" value="<?php echo $bilgilerimcek['kullaniciMail'] ?>">
+        <input type="text" name="kullaniciParola" value="<?php echo $bilgilerimcek['kullaniciParola'] ?>">
+        <input type="text" name="kullaniciYas" value="<?php echo $bilgilerimcek['kullaniciYas'] ?>">
+        <input type="submit" value="GÜNCELLE" name="uptadeislemi">
+    </form>
+    
 </html>
