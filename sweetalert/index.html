@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Alert</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, illo. Quam possimus, earum nam laboriosam
+            omnis aliquid dolorem ipsa, corrupti eligendi sapiente eos rerum fugiat cupiditate debitis quidem aliquam
+            nemo?</p>
+
+        <div class="col-md-6">
+            <form id="denemeform">
+                <input type="text" name="kullanici_ad" class="form-control">
+                <input type="password" name="kullanici_pass" class="form-control">
+
+                <input type="hidden" name="ilkform">
+                <button id="gonder" class="btn btn-success"> Kaydet</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script type="text/javascript">
+
+        $("#denemeform").submit(function () {
+
+            $.ajax({
+                type: "POST",
+                url: "islem.php",
+                data: $("#denemeform").serialize(),
+                success: function (data) {
+
+                    var veri = JSON.parse(data);
+                    console.log(data);
+                    swal("Dönen bilgileriniz", veri.message, veri.status);
+
+                },
+            });
+            return false;
+        });
+
+    </script>
+    <!-- 
+        JQUERY - AJAX - JSON - SWEERALERT ÖRNEK KODLARI
+         /*
+            var baslik = "Merhaba Dünya Başlık Yazısı"
+
+            Kullanım 1
+            swal(baslik,"Mehmet Asaf ÖZTÜRK a b c d e f g h t y fhlaıdhfadıshfpasıfh fdhsfyoadsfyas dsuıfoasdfyadsıfu sdufhaosdıfosadfh","info");
+            error success info
+
+
+            swal ({
+                title: "Udemy Kursları",
+                text: "Deneme yazısı fhsdfı fkhdsoıfs fksdhfoıds",
+                icon: "info",
+                button: "Sayfayı yenile"
+            })
+
+            .then((value) => {
+                swal(baslik,"ikinci alert","success")
+            });
+            */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /*
+            swal({
+                title: "Buton silinecek",
+                text: "Yazı",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((sil) => {
+                if (sil) {
+                    $("#deneme").hide();
+
+                    swal("Tebrikleri buton silindi", {
+                        icon: "success",
+                    });
+                } else {
+                    swal("buton silinmedi");
+                }
+            });
+            */
+     -->
+
+</body>
+
+</html>
