@@ -1,5 +1,5 @@
 <?php
- /*
+ 
 $ch = curl_init();
 $file = fopen("kaynak.txt","w"); //bu dosya varsa açya yoksa oluştur
 
@@ -13,22 +13,22 @@ if (curl_exec($ch)) { // kontrol etme
 }
 
 curl_close($ch);
-*/
+
 
 ///////////////////////////////////// REFERER DEĞİŞTİRME /////////////////////////////////////////////////////
 
-/*
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'http://localhost/curl/referer.php');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
 curl_setopt($ch, CURLOPT_REFERER, "https:www.mynet.com"); // buradan gidiyormuş gibi görüntüleme
 curl_exec($ch);
 curl_close($ch);
-*/
+
 
 ////////////////////////////////////////////// USER AGENT BİLGİLERİ ////////////////////////////////////////////
 
-/*
+
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'http://localhost/curl/agent.php');
@@ -37,7 +37,7 @@ curl_setopt($ch, CURLOPT_USERAGENT, "Özel");
 
 curl_exec($ch);
 curl_close($ch);
-*/
+
 
 ////////////////////////////////////////////// SETUP ARRAY /////////////////////////////////////////////////////////
 
