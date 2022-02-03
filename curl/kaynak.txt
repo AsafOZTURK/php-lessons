@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+  <meta name="description" content="Sektörel bazda online yazılımlar ve Edukey uzman yazılım eğitimleri...">
+  <meta name="keywords" content="ne yazılım, edukey, php script, php yazılım, online yazılımlar, edukey eğitimleri">
+  <meta name="author" content="Negbil Bilgisayar Yazılım ve Eğitim Hizmetleri">
+  <link rel="icon"   type="image/png"   href="nedmin/dimg/settings/5c34f3e682439.png">
+  <base href="https://www.neyazilim.com">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css" /> 
+
+  <link rel="stylesheet" type="text/css" href="css/plugins.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/responsive.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="nedmin/dist/css/ozel.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+<meta name="google-site-verification" content="ao8cX_c_AIJiGaaFoh7bMSy7ZlarFPuHx7q0TlUoVek" />
+
+</head>
+
+<body>
+
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="dark header-logo-center">
+      <div id="header-wrap">
+        <div class="container">
+          <!--Logo-->
+          <div id="logo">
+            <a href="/" class="logo" >
+              <img src="nedmin/dimg/settings/5c34f2f5ed4b1.png" alt="Negbil Bilgisayar Yazılım ve Eğitim Hizmetleri">
+            </a>
+          </div>
+          <!--End: Logo-->
+
+          <!--Top Search Form-->
+          <div id="top-search">
+            <form action="search-results-page.html" method="get">
+              <input type="text" name="q" class="form-control" value="" placeholder="Ne Aradınız  &quot;?&quot;">
+            </form>
+          </div>
+          <!--end: Top Search Form-->
+
+          <!--Header Extras-->
+          <div class="header-extras">
+
+            <ul>
+
+                             <li><a href="giris/uye-girisi" aria-expanded="true"  > <i class="fa fa-user"></i></a> <span class="caret"></span></a></li>
+
+             
+
+             <li >
+              <!--shopping cart-->
+              <div id="shopping-cart">
+                <a href="sepet">
+                  <span class="shopping-cart-items">0</span>
+
+                  <i class="fa fa-shopping-cart"></i></a>
+                </div>
+                <!--end: shopping cart-->
+              </li>
+            </ul>
+          </div>
+          <!--end: Header Extras--> 
+
+          <!--Navigation Resposnive Trigger-->
+          <div id="mainMenu-trigger">
+            <button class="lines-button x"> <span class="lines"></span> </button>
+          </div>
+          <!--end: Navigation Resposnive Trigger-->
+
+          <!--Navigation-->
+          <div id="mainMenu" class="light">
+            <div class="container">
+              <nav>
+                <!--Left menu-->
+                <ul>
+                  <li><a href="/">ANASAYFA</a></li>
+                  <li><a href="kurumsal/ne-yazilim-hakkinda">KURUMSAL</a></li>
+
+                  <li class="dropdown"> <a href="javascript:void(0)">KATEGORİLER</a>
+                    <ul class="dropdown-menu">
+                                              <li>  <a href="magaza/kategoriler/yazilim-kitaplari"><span class="dropdown-menu-title-only">Yazılım Kitapları</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/udemy-egitimleri"><span class="dropdown-menu-title-only">Udemy Eğitimleri</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/youtube-egitimleri"><span class="dropdown-menu-title-only">Youtube Eğitimleri</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/kurumsal-firma"><span class="dropdown-menu-title-only">Kurumsal Firma</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/kurumsal-firma-eticaret"><span class="dropdown-menu-title-only">Kurumsal Firma + Eticaret</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/spa-masaj-salonu"><span class="dropdown-menu-title-only">Spa & Masaj Salonu</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/haber"><span class="dropdown-menu-title-only">Haber</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/freelancer"><span class="dropdown-menu-title-only">Freelancer</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/spor-fitness-salonu"><span class="dropdown-menu-title-only">Spor & Fitness Salonu</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/nakliyat"><span class="dropdown-menu-title-only">Nakliyat</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/hotel-pansiyon"><span class="dropdown-menu-title-only">Hotel & Pansiyon</span></a></li>
+                                              <li>  <a href="magaza/kategoriler/restaurant-lokanta"><span class="dropdown-menu-title-only">Restaurant & Lokanta</span></a></li>
+                                          </ul>
+                  </li>
+                  <li><a href="hesap-numalarimiz">HESAPLARIMIZ</a></li>
+
+                </ul>
+                <!--Right Menu-->
+                <ul>
+                  <li><a href="haberler">BLOG</a></li>
+                  <li><a href="sik-sorulanlar">S.S.S</a></li>
+                  <li class="dropdown"> <a href="#">TEKLİF | BİLDİRİM</a>
+                    <ul class="dropdown-menu">
+                     <li>  <a href="teklif-al"><span class="dropdown-menu-title-only text-muted">Teklif Al</span></a></li>
+                     <li>  <a href="odeme-bildirimi"><span class="dropdown-menu-title-only">Ödeme Bildirimi</span></a></li>
+                     
+
+                   </ul>
+                 </li>
+                 <li><a href="bize-ulasin">İLETİŞİM</a></li>
+               </ul>
+
+             </nav>
+           </div>
+         </div>
+         <!--end: Navigation-->
+       </div>
+     </div>
+   </header>
+   <!-- end: Header -->
+
+
+  <title>Negbil Bilgisayar Yazılım ve Eğitim Hizmetleri</title>
+
+<section id="page-content" class="sidebar-left">
+	<div class="container">
+		<div class="row">
+
+			<div class="content col-md-9">
+				<div class="row m-b-20">
+					<div class="col-md-12 ">
+						<h3 class="">Öne Çıkanlar</h3>
+						<hr>
+					</div>
+
+
+				</div>
+
+				<div class="shop">
+					<div class="grid-layout grid-3-columns" data-item="grid-item">
+
+													<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/youtube-egitimleri/kolay-veri-cekme-ve-ajax-veri-yuklemeli-yemek-tarifleri-sitesi-egitimi"><img alt="Kolay Veri Çekme ve Ajax Veri Yüklemeli Yemek Tarifleri Sitesi Eğitimi" src="nedmin/dimg/products/5c50aeee03740.png">
+										</a>
+										<a href="magaza/youtube-egitimleri/kolay-veri-cekme-ve-ajax-veri-yuklemeli-yemek-tarifleri-sitesi-egitimi"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/youtube-egitimleri/kolay-veri-cekme-ve-ajax-veri-yuklemeli-yemek-tarifleri-sitesi-egitimi"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/youtube-egitimleri/kolay-veri-cekme-ve-ajax-veri-yuklemeli-yemek-tarifleri-sitesi-egitimi" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Youtube Eğitimleri</div>
+	<div class="product-title">
+		<h3><a href="magaza/youtube-egitimleri/kolay-veri-cekme-ve-ajax-veri-yuklemeli-yemek-tarifleri-sitesi-egitimi">Kolay Veri Çek...</a></h3>
+	</div>
+	<div class="product-price"><ins>25.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/egitmen-egitim/udemy-kurslari-otomatik-ceken-kisisel-egitmen-kisisel-sitesi"><img alt="Udemy Kursları ve Youtube Videolarınızı Sitenize Otomatik Çeken Kişisel Eğitmen Sitesi " src="nedmin/dimg/products/5c423ab1e951d.jpg">
+										</a>
+										<a href="magaza/egitmen-egitim/udemy-kurslari-otomatik-ceken-kisisel-egitmen-kisisel-sitesi"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/egitmen-egitim/udemy-kurslari-otomatik-ceken-kisisel-egitmen-kisisel-sitesi"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/egitmen-egitim/udemy-kurslari-otomatik-ceken-kisisel-egitmen-kisisel-sitesi" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Eğitmen / Eğitim</div>
+	<div class="product-title">
+		<h3><a href="magaza/egitmen-egitim/udemy-kurslari-otomatik-ceken-kisisel-egitmen-kisisel-sitesi">Udemy Kursları...</a></h3>
+	</div>
+	<div class="product-price"><ins>249.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/kurumsal-firma/kurumsal-firma-v19-1"><img alt="Kurumsal Firma V19-1" src="nedmin/dimg/products/5c3c518c262a5.jpg">
+										</a>
+										<a href="magaza/kurumsal-firma/kurumsal-firma-v19-1"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/kurumsal-firma/kurumsal-firma-v19-1"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/kurumsal-firma/kurumsal-firma-v19-1" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Kurumsal Firma</div>
+	<div class="product-title">
+		<h3><a href="magaza/kurumsal-firma/kurumsal-firma-v19-1">Kurumsal Firma ...</a></h3>
+	</div>
+	<div class="product-price"><ins>1499.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/secim-siyaset/belediye-secim-scripti-v19-1"><img alt="Belediye Seçim Scripti V19-1" src="nedmin/dimg/products/5c3dcbd84877d.jpg">
+										</a>
+										<a href="magaza/secim-siyaset/belediye-secim-scripti-v19-1"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/secim-siyaset/belediye-secim-scripti-v19-1"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/secim-siyaset/belediye-secim-scripti-v19-1" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Seçim - Siyaset</div>
+	<div class="product-title">
+		<h3><a href="magaza/secim-siyaset/belediye-secim-scripti-v19-1">Belediye Seçim...</a></h3>
+	</div>
+	<div class="product-price"><ins>1499.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/kurumsal-firma-eticaret/e-ticaret-kurumsal-firma-2019-v2"><img alt="E-Ticaret + Kurumsal Firma 2019 V2" src="nedmin/dimg/products/5c3c51c356182.jpg">
+										</a>
+										<a href="magaza/kurumsal-firma-eticaret/e-ticaret-kurumsal-firma-2019-v2"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/kurumsal-firma-eticaret/e-ticaret-kurumsal-firma-2019-v2"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/kurumsal-firma-eticaret/e-ticaret-kurumsal-firma-2019-v2" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Kurumsal Firma + Eticaret</div>
+	<div class="product-title">
+		<h3><a href="magaza/kurumsal-firma-eticaret/e-ticaret-kurumsal-firma-2019-v2">E-Ticaret + Kur...</a></h3>
+	</div>
+	<div class="product-price"><ins>2900.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/spa-masaj-salonu/spor-fitness-salonu-v93-scripti"><img alt="Spa & masaj salonu scripti masajv26" src="nedmin/dimg/products/5c3880deb176c.jpg">
+										</a>
+										<a href="magaza/spa-masaj-salonu/spor-fitness-salonu-v93-scripti"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/spa-masaj-salonu/spor-fitness-salonu-v93-scripti"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/spa-masaj-salonu/spor-fitness-salonu-v93-scripti" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Spa & Masaj Salonu</div>
+	<div class="product-title">
+		<h3><a href="magaza/spa-masaj-salonu/spor-fitness-salonu-v93-scripti">Spa & masaj sal...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/haber/haber-scripti-v9-auto-pilot"><img alt="Haber Scripti V9 Auto Pilot" src="nedmin/dimg/products/5c3896a12111c.jpg">
+										</a>
+										<a href="magaza/haber/haber-scripti-v9-auto-pilot"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/haber/haber-scripti-v9-auto-pilot"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/haber/haber-scripti-v9-auto-pilot" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Haber</div>
+	<div class="product-title">
+		<h3><a href="magaza/haber/haber-scripti-v9-auto-pilot">Haber Scripti V...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/freelancer/freelancer-kartvizit-blog-scripti"><img alt="Freelancer Kartvizit Blog Scripti" src="nedmin/dimg/products/5c389791475c7.jpg">
+										</a>
+										<a href="magaza/freelancer/freelancer-kartvizit-blog-scripti"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/freelancer/freelancer-kartvizit-blog-scripti"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/freelancer/freelancer-kartvizit-blog-scripti" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Freelancer</div>
+	<div class="product-title">
+		<h3><a href="magaza/freelancer/freelancer-kartvizit-blog-scripti">Freelancer Kart...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/spor-fitness-salonu/spa-masaj-salonu-scripti-masajv26"><img alt="Spa & masaj salonu scripti masajv26" src="nedmin/dimg/products/5c3898575f7be.jpg">
+										</a>
+										<a href="magaza/spor-fitness-salonu/spa-masaj-salonu-scripti-masajv26"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/spor-fitness-salonu/spa-masaj-salonu-scripti-masajv26"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/spor-fitness-salonu/spa-masaj-salonu-scripti-masajv26" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Spor & Fitness Salonu</div>
+	<div class="product-title">
+		<h3><a href="magaza/spor-fitness-salonu/spa-masaj-salonu-scripti-masajv26">Spa & masaj sal...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/nakliyat/evden-eve-veya-nakliyat-firma-scripti-nakliye-v12"><img alt="Evden Eve veya Nakliyat Firma Scripti Nakliye v12" src="nedmin/dimg/products/5c3898de7e2c1.jpg">
+										</a>
+										<a href="magaza/nakliyat/evden-eve-veya-nakliyat-firma-scripti-nakliye-v12"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/nakliyat/evden-eve-veya-nakliyat-firma-scripti-nakliye-v12"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/nakliyat/evden-eve-veya-nakliyat-firma-scripti-nakliye-v12" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Nakliyat</div>
+	<div class="product-title">
+		<h3><a href="magaza/nakliyat/evden-eve-veya-nakliyat-firma-scripti-nakliye-v12">Evden Eve veya ...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/hotel-pansiyon/hotel-pansiyon-scripti-v31-golds"><img alt="Hotel & Pansiyon Scripti V31 Golds" src="nedmin/dimg/products/5c38998ed91e6.jpg">
+										</a>
+										<a href="magaza/hotel-pansiyon/hotel-pansiyon-scripti-v31-golds"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/hotel-pansiyon/hotel-pansiyon-scripti-v31-golds"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/hotel-pansiyon/hotel-pansiyon-scripti-v31-golds" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Hotel & Pansiyon</div>
+	<div class="product-title">
+		<h3><a href="magaza/hotel-pansiyon/hotel-pansiyon-scripti-v31-golds">Hotel & Pansiyo...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+							<div class="grid-item">
+								<div class="product">
+									<div class="product-image">
+										<a href="magaza/restaurant-lokanta/restaurant-lokanta-scripti-restaurantv52"><img alt="Restaurant & Lokanta Scripti restaurantv52" src="nedmin/dimg/products/5c3899f4ccf24.jpg">
+										</a>
+										<a href="magaza/restaurant-lokanta/restaurant-lokanta-scripti-restaurantv52"><img alt="Shop product image!" src="/nedmin/dimg/images/responsive.jpg">
+										</a> 
+
+										
+										
+									</a>
+<!-- 									<span class="product-new"><i style="color:White" class="fas fa-star"></i></span>
+-->									<span class="product-wishlist">
+	<a href="magaza/restaurant-lokanta/restaurant-lokanta-scripti-restaurantv52"><i class="fa fa-heart"></i></a>
+</span>
+<div class="product-overlay">
+	<a href="magaza/restaurant-lokanta/restaurant-lokanta-scripti-restaurantv52" >İncele</a>
+</div>
+</div>
+<div class="product-description">
+	<div class="product-category">Restaurant & Lokanta</div>
+	<div class="product-title">
+		<h3><a href="magaza/restaurant-lokanta/restaurant-lokanta-scripti-restaurantv52">Restaurant & Lo...</a></h3>
+	</div>
+	<div class="product-price"><ins>1199.00₺</ins>
+	</div>
+
+</div>
+</div>
+</div>
+</div>
+<hr>
+
+
+
+</div>
+
+</div>
+
+
+<div class="sidebar col-md-3">
+	
+
+<div class="widget clearfix widget-archive">
+	<h4 class="widget-title">Kategoriler</h4> 
+	<ul class="list list-lines">
+
+					<li><a href="magaza/kategoriler/yazilim-kitaplari">Yazılım Kitapları</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/udemy-egitimleri">Udemy Eğitimleri</a> <span class="count">(2)</span>
+			</li>
+						<li><a href="magaza/kategoriler/youtube-egitimleri">Youtube Eğitimleri</a> <span class="count">(4)</span>
+			</li>
+						<li><a href="magaza/kategoriler/kurumsal-firma">Kurumsal Firma</a> <span class="count">(2)</span>
+			</li>
+						<li><a href="magaza/kategoriler/kurumsal-firma-eticaret">Kurumsal Firma + Eticaret</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/spa-masaj-salonu">Spa & Masaj Salonu</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/haber">Haber</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/freelancer">Freelancer</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/spor-fitness-salonu">Spor & Fitness Salonu</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/nakliyat">Nakliyat</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/hotel-pansiyon">Hotel & Pansiyon</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/restaurant-lokanta">Restaurant & Lokanta</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/saglik-medikal">Sağlık & Medikal</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/kuafor-guzellik-salonu">Kuaför Güzellik Salonu</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/fotograf-studyo">Fotoğraf Stüdyo</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/secim-siyaset">Seçim - Siyaset</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/egitmen-egitim">Eğitmen / Eğitim</a> <span class="count">(1)</span>
+			</li>
+						<li><a href="magaza/kategoriler/diger">Diğer</a> <span class="count">(1)</span>
+			</li>
+					</ul>
+	</div>
+
+	
+	<div class="widget clearfix widget-shop">
+		
+		<h4 class="widget-title">Popüler Ürünler</h4>
+		
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/diger/php-ozel-1-ders"><img src="nedmin/dimg/products/5d4050c5c8387.jpg" alt="PHP Özel 1 Ders ">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Diğer</div>
+					<div class="product-title">
+						<h3><a href="magaza/diger/php-ozel-1-ders">PHP Özel 1 Ders </a></h3>
+					</div>
+					<div class="product-price">120.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/yazilim-kitaplari/sifirdan-ileri-seviye-php-kitabi-emrah-yuksel"><img src="nedmin/dimg/products/5c90b0998debf.png" alt="Sıfırdan İleri Seviye PHP Kitabı (imzalı)">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Yazılım Kitapları</div>
+					<div class="product-title">
+						<h3><a href="magaza/yazilim-kitaplari/sifirdan-ileri-seviye-php-kitabi-emrah-yuksel">Sıfırdan İleri Seviye PHP Kitabı (imzalı)</a></h3>
+					</div>
+					<div class="product-price">50.92₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/udemy-egitimleri/web-gelistirme-uzmanligi-5-egitim-indirimli"><img src="nedmin/dimg/products/5c4f53d2c7f26.jpg" alt="Web Geliştirme Uzmanlığı 5 Eğitim İndirimli">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Udemy Eğitimleri</div>
+					<div class="product-title">
+						<h3><a href="magaza/udemy-egitimleri/web-gelistirme-uzmanligi-5-egitim-indirimli">Web Geliştirme Uzmanlığı 5 Eğitim İndirimli</a></h3>
+					</div>
+					<div class="product-price">99.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/kurumsal-firma/firma-scripti-porto-v5-full-premium"><img src="nedmin/dimg/products/5c387e83d21fd.jpg" alt="Firma Scripti Porto V5 Full Premium">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Kurumsal Firma</div>
+					<div class="product-title">
+						<h3><a href="magaza/kurumsal-firma/firma-scripti-porto-v5-full-premium">Firma Scripti Porto V5 Full Premium</a></h3>
+					</div>
+					<div class="product-price">1199.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/udemy-egitimleri/sifirdan-ileri-seviyeye-php-web-programlama-html-pdo-mysql"><img src="nedmin/dimg/products/5c3886393bc78.jpg" alt="Sıfırdan İleri Seviyeye PHP Web Programlama (HTML+PDO+MySQL)">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Udemy Eğitimleri</div>
+					<div class="product-title">
+						<h3><a href="magaza/udemy-egitimleri/sifirdan-ileri-seviyeye-php-web-programlama-html-pdo-mysql">Sıfırdan İleri Seviyeye PHP Web Programlama (HTML+PDO+MySQL)</a></h3>
+					</div>
+					<div class="product-price">38.99₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/youtube-egitimleri/php-script-lisanslama-egitimi"><img src="nedmin/dimg/products/5c388c7dab2b9.jpg" alt="Php Script Lisanslama Eğitimi">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Youtube Eğitimleri</div>
+					<div class="product-title">
+						<h3><a href="magaza/youtube-egitimleri/php-script-lisanslama-egitimi">Php Script Lisanslama Eğitimi</a></h3>
+					</div>
+					<div class="product-price">49.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/youtube-egitimleri/emlak-scripti-kodlama-egitim-seti-php-pdo-mysql"><img src="nedmin/dimg/products/5c388c5547123.jpg" alt="Emlak Scripti kodlama eğitim seti php+pdo+mysql">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Youtube Eğitimleri</div>
+					<div class="product-title">
+						<h3><a href="magaza/youtube-egitimleri/emlak-scripti-kodlama-egitim-seti-php-pdo-mysql">Emlak Scripti kodlama eğitim seti php+pdo+mysql</a></h3>
+					</div>
+					<div class="product-price">49.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/youtube-egitimleri/porto-firma-scripti-egitim-seti-ve-kaynak-kodlari"><img src="nedmin/dimg/products/5c388c2accc09.jpg" alt="Porto Firma Scripti Eğitim Seti ve Kaynak Kodları">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Youtube Eğitimleri</div>
+					<div class="product-title">
+						<h3><a href="magaza/youtube-egitimleri/porto-firma-scripti-egitim-seti-ve-kaynak-kodlari">Porto Firma Scripti Eğitim Seti ve Kaynak Kodları</a></h3>
+					</div>
+					<div class="product-price">49.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/fotograf-studyo/fotograf-studyo-foto-blog-scripti-studyov58"><img src="nedmin/dimg/products/5c389bdf1d896.jpg" alt="Fotoğraf Stüdyo & Foto Blog Scripti stüdyov58">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Fotoğraf Stüdyo</div>
+					<div class="product-title">
+						<h3><a href="magaza/fotograf-studyo/fotograf-studyo-foto-blog-scripti-studyov58">Fotoğraf Stüdyo & Foto Blog Scripti stüdyov58</a></h3>
+					</div>
+					<div class="product-price">1199.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+				
+			<div class="product">
+				<div class="product-image">
+					<a href="magaza/kuafor-guzellik-salonu/kuafor-guzellik-salonu-bay-bayan-saloon-scripti-v79"><img src="nedmin/dimg/products/5c389b6e8dc7f.jpg" alt="Kuaför Güzellik Salonu Bay & Bayan Saloon scripti v79">
+					</a>
+				</div>
+				<div class="product-description">
+					<div class="product-category">Kuaför Güzellik Salonu</div>
+					<div class="product-title">
+						<h3><a href="magaza/kuafor-guzellik-salonu/kuafor-guzellik-salonu-bay-bayan-saloon-scripti-v79">Kuaför Güzellik Salonu Bay & Bayan Saloon scripti v79</a></h3>
+					</div>
+					<div class="product-price">1199.00₺</ins>
+					</div>
+					<div class="product-rate">
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>
+						<i class="fa fa-star"></i>				</div>
+					</div>
+				</div>
+
+							</div>
+
+
+</div>
+
+</div>
+</div>
+</section>
+
+ <!-- Footer -->
+ <footer id="footer" class="footer-light">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3"> 
+          <!-- Footer widget area 1 -->
+          <div class="widget  widget-contact-us" style="background-image: url('images/world-map-dark.png'); background-position: 50% 20px; background-repeat: no-repeat">
+            <h4>ADRES & İLETİŞİM</h4>
+            <ul class="list-icon">
+              <li><i class="fa fa-map-marker-alt"></i> Cevdet Barın Bulvarı No: 18 Kat: 3 <br>
+                Çatalca-İstanbul</li>
+                <li><i class="fa fa-phone"></i> 08508408076 </li>
+
+                <li><i class="far fa-envelope"></i> <a href="mailto:info@neyazilim.com">info@neyazilim.com</a> </li>
+
+              </ul>
+              <!-- Social icons -->
+              <div class="social-icons social-icons-border float-left m-t-20">
+                <ul>
+
+                  <li class="social-facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li class="social-twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li class="social-youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
+
+                </ul>
+              </div>
+              <!-- end: Social icons --> 
+            </div>
+            <!-- end: Footer widget area 1 --> 
+          </div>
+          <div class="col-lg-3"> 
+            <!-- Footer widget area 2 -->
+            <div class="widget">
+              <h4>KURUMSAL LİNKLER</h4>
+              <ul class="list-icon list-icon-arrow">
+                                  <li><a href="kurumsal/ne-yazilim-hakkinda">Ne Yazılım Hakkında</a></li>
+                                    <li><a href="kurumsal/edukey-hakkinda">Edukey Hakkında</a></li>
+                                    <li><a href="kurumsal/mesafeli-satis-sozlemesi">Mesafeli Satış Sözleşmesi</a></li>
+                                    <li><a href="kurumsal/gizlilik-politikasi">Gizlilik Politikası</a></li>
+                                  </ul>
+              </div>
+              <!-- end: Footer widget area 2 --> 
+            </div>
+
+           <div class="col-lg-3"> 
+            <!-- Footer widget area 2 -->
+            <div class="widget">
+              <h4>KURUMSAL LİNKLER</h4>
+              <ul class="list-icon list-icon-arrow">
+                                </ul>
+              </div>
+              <!-- end: Footer widget area 2 --> 
+            </div>
+
+               <div class="col-lg-3"> 
+              <!-- Footer widget area 2 -->
+              <div class="widget">
+                <h4>HIZLI LİNKLER</h4>
+                <ul class="list-icon list-icon-arrow">
+               
+                    <li><a href="giris/uye-girisi">Üye Girişi</a></li>
+                    <li><a href="giris/uye-kaydi">Üye Kaydı</a></li>
+                    <li><a href="sepet">Sepetim</a></li>
+                    
+                  </ul>
+                </div>
+                <!-- end: Footer widget area 2 --> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div align="center">
+                  <img width="200" src="nedmin/dimg/images/credits_card.png">
+
+        </div>
+        <div class="copyright-content">
+          <div class="container">
+            <div class="copyright-text text-center">&copy; 2019 Ne Yazılım -  <a href="/">Ne Yazılım</a> ve <a href="https://www.edukey.com.tr">Edukey</a> Negbil Bilgisayar markasıdır.</div>
+          </div>
+        </div>
+      </footer>
+      <!-- end: Footer -->
+    </div>
+    <!-- end: Wrapper -->
+
+    <!-- Go to top button -->
+    <a id="goToTop"><i class="fa fa-angle-up top-icon"></i><i class="fa fa-angle-up"></i></a><!--Plugins-->
+    <script src="js/jquery.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="js/functions.js"></script> 
+    <script src="nedmin/dist/js/ozel.js" type="text/javascript"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-63590432-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-63590432-11');
+</script>
+
+
+  </body>
+
+  </html>
