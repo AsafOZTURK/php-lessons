@@ -34,6 +34,7 @@
                 <input type="pass" name="kullanici_pass"><br>
                 <button type="submit" name="login">Giriş Yap</button>
             </form>
+            <a href="curl.php">Bot girişi yap</a>
         </div>
     <?php } 
     ?>
